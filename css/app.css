@@ -1842,6 +1842,15 @@ input::-ms-clear {
     padding: 1.875rem;
 }
 
+#quick-look-oppo .modal-dialog {
+  width: 100%;
+  max-width: 991px;
+}
+
+#quick-look-oppo .modal-body {
+  padding: 1.875rem;
+}
+
 .new-l--center {
   text-align: center; }
 
@@ -5185,6 +5194,20 @@ input::-ms-clear {
       .is-grid-active .product-m__quick-look > a:hover {
         color: #a0a0a0; }
 
+        .is-grid-active .product-m__quick-look-oppo {
+          position: absolute;
+          top: 8px;
+          right: 22px;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.3s; }
+          .is-grid-active .product-m__quick-look-oppo > a {
+            font-size: 16px;
+            color: #ff4500;
+            transition: color 110ms ease-in-out; }
+            .is-grid-active .product-m__quick-look-oppo > a:hover {
+              color: #a0a0a0; }
+
 .is-grid-active .product-m__quick-look-samsung {
     position: absolute;
     top: 8px;
@@ -5193,13 +5216,11 @@ input::-ms-clear {
     visibility: hidden;
     transition: 0.3s;
 }
-
     .is-grid-active .product-m__quick-look-samsung > a {
         font-size: 16px;
         color: #ff4500;
         transition: color 110ms ease-in-out;
     }
-
         .is-grid-active .product-m__quick-look-samsung > a:hover {
             color: #a0a0a0;
         }
@@ -5273,6 +5294,11 @@ input::-ms-clear {
   .is-grid-active .product-m:hover .product-m__quick-look {
     opacity: 1;
     visibility: visible; }
+
+    .is-grid-active .product-m:hover .product-m__quick-look-oppo {
+      opacity: 1;
+      visibility: visible; }
+  
     .is-grid-active .product-m:hover .product-m__quick-look-samsung {
         opacity: 1;
         visibility: visible;
@@ -5331,6 +5357,22 @@ input::-ms-clear {
       transition: color 110ms ease-in-out; }
       .is-list-active .product-m__quick-look > a:hover {
         color: #fa4400; }
+
+        .is-list-active .product-m__quick-look-oppo {
+          position: absolute;
+          top: 8px;
+          right: 22px;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.3s; }
+          .is-list-active .product-m__quick-look-oppo > a {
+            font-size: 16px;
+            color: #ff4500;
+            transition: color 110ms ease-in-out; }
+            .is-list-active .product-m__quick-look-oppo > a:hover {
+              color: #fa4400; }
+
+
     .is-list-active .product-m__quick-look-samsung {
         position: absolute;
         top: 8px;
@@ -5411,6 +5453,12 @@ input::-ms-clear {
   .is-list-active .product-m:hover .product-m__quick-look {
     opacity: 1;
     visibility: visible; }
+
+    .is-list-active .product-m:hover .product-m__quick-look-oppo {
+      opacity: 1;
+      visibility: visible; }
+
+
     .is-list-active .product-m:hover .product-m__quick-look-samsung {
         opacity: 1;
         visibility: visible;

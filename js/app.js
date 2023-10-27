@@ -327,7 +327,7 @@
 
     // Thời gian đếm ngược
     RESHOP.timerCountDown = function() {
-        // Check if Count Down on the page
+        // Dòng lệnh kiểm tra có đếm ngược hay không
         if ($collectionCountDown.length) {
             $collectionCountDown.each(function () {
                 var $this = $(this),
@@ -587,6 +587,12 @@
             $('#quick-look').on('shown.bs.modal', function () {
                 $modalProductDetailElement.resize();
             });
+            $('#quick-look-samsung').on('shown.bs.modal', function () {
+                $modalProductDetailElement.resize();
+            });
+            $('#quick-look-oppo').on('shown.bs.modal', function () {
+                $modalProductDetailElement.resize();
+            });
         }
     };
     // Shop Category Toggle Functionality
@@ -631,6 +637,7 @@
             });
         }
     };
+
 
     // Show Newsletter Modal
     RESHOP.showNewsletterModal = function() {
