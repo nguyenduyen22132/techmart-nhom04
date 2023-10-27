@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>Admin page</title>
+
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--====== Bootstrap 5 ======-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="css/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--====== Admin ======-->
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt="">
+        </div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        <!--====== Main Header ======-->
+        <header class="header--style-1 header--box-shadow">
+
+            <!--====== Nav 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+
+                    <!--====== Primary Nav ======-->
+                    <div class="primary-nav">
+
+                        <!--====== Main Logo ======-->
+
+                        <a class="main-logo" href="index.html">
+
+                            <img src="images/logo/logo-1.png" alt=""></a>
+                        <!--====== End - Main Logo ======-->
+
+
+                        <!--====== Search Form ======-->
+                        <form class="main-form">
+
+                            <label for="main-search"></label>
+
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                                id="main-search" placeholder="Search">
+
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
+                        </form>
+                        <!--====== End - Search Form ======-->
+
+
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation">
+
+                            <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
+
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+
+                                <span class="ah-close">✕ Close</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
+                                        title="Account">
+
+                                        <a><i class="far fa-user-circle"></i></a>
+
+                                        <!--====== Dropdown ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li>
+
+                                                <a href="dashboard.html"><i class="fas fa-user-circle u-s-m-r-6"></i>
+
+                                                    <span>Tài khoản</span></a>
+                                            </li>
+                                            <li>
+
+                                                <a href="signup.html"><i class="fas fa-user-plus u-s-m-r-6"></i>
+
+                                                    <span>Đăng ký</span></a>
+                                            </li>
+                                            <li>
+
+                                                <a href="signin.html"><i class="fas fa-lock u-s-m-r-6"></i>
+
+                                                    <span>Đăng nhập</span></a>
+                                            </li>
+                                            <li>
+
+                                                <a href="signup.html"><i class="fas fa-lock-open u-s-m-r-6"></i>
+
+                                                    <span>Đăng xuất</span></a>
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
+                                        title="Settings">
+
+                                        <a><i class="fas fa-user-cog"></i></a>
+
+                                        <!--====== Dropdown ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li class="has-dropdown has-dropdown--ul-right-100">
+
+                                                <a>Language<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:120px">
+                                                    <li>
+
+                                                        <a class="u-c-brand">ENGLISH</a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a>ARABIC</a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a>FRANCAIS</a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a>ESPANOL</a>
+                                                    </li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-right-100">
+
+                                                <a>Currency<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                                <!--====== Dropdown ======-->
+
+                                                <span class="js-menu-toggle"></span>
+                                                <ul style="width:225px">
+                                                    <li>
+
+                                                        <a class="u-c-brand">$ - US DOLLAR</a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a>£ - BRITISH POUND STERLING</a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a>€ - EURO</a>
+                                                    </li>
+                                                </ul>
+                                                <!--====== End - Dropdown ======-->
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                    <li data-tooltip="tooltip" data-placement="left" title="Contact">
+
+                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a>
+                                    </li>
+                                    <li data-tooltip="tooltip" data-placement="left" title="Mail">
+
+                                        <a href="mailto:contact@domain.com"><i class="far fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Primary Nav ======-->
+                </div>
+            </nav>
+            <!--====== End - Nav 1 ======-->
+            <!--Main Navigation-->
+
+            <!-- Sidebar -->
+
+            <nav class="sidebar">
+                <ul>
+                    <li>
+                        <a href="admin.html">
+                            <span class="icon"><i class="fas fa-tachometer-alt"></i> </span>
+                            <span class="menu-text">Dashboards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="admin-product.html">
+                            <span class="icon"><i class="fas fa-box"></i></span>
+                            <span class="menu-text">Sản phẩm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-order.html">
+                            <span class="icon"><i class="fas fa-shopping-cart"></i> </span>
+                            <span class="menu-text">Đơn hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dash-active" href="admin-customer.html">
+                            <span class="icon"><i class="fas fa-users"></i> </span>
+                            <span class="menu-text">Khách hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-discount.html">
+                            <span class="icon"><i class="fas fa-gift"></i></span>
+                            <span class="menu-text">Khuyến mãi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-login.html">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="menu-text">Đăng xuất</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+            <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+
+            <!--Main Navigation-->
+
+            <!--Main layout-->
+
+            <!--Main layout-->
+
+
+        </header>
+        <!--====== End - Main Header ======-->
+
+
+        <!--====== App Content ======-->
+        <main id="sidebar-content" role="main">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="row align-items-center">
+                        <div class="col-sm mb-sm-0">
+                            <h1 class="page-header-title">Khách hàng <span
+                                    class="badge bg-info text-wrap ml-2">1,025</span></h1>
+                            <div class="mt-2">
+                                <a class="text-body me-3">
+                                    <i class="fas fa-download mr-1"></i> Export
+                                </a>
+                                <a class="text-body">
+                                    <i class="fas fa-upload me-1"></i> Import
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-auto">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#customerModal">Thêm mới</button>
+                        </div>
+                        <!-- Customer Input Modal -->
+                        <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="customerModalLabel">Thêm mới</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Customer Input Form -->
+                                        <form id="customerForm">
+                                            <div class="mb-3">
+                                                <label for="customterName" class="form-label">Họ và tên (*)</label>
+                                                <input type="text" autofocus class="form-control"
+                                                    id="customterName" required >
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="text" class="form-control" id="email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Số điện thoại (*)</label>
+                                                <input type="text" required class="form-control" id="email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Địa chỉ</label>
+                                                <input type="text"  class="form-control" id="address">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="country" class="form-label">Quốc gia</label>
+                                                <input type="text"  class="form-control" id="country">
+                                            </div>
+                                        
+                                            <div id="errorMessage" style="display: none;"
+                                                class="alert alert-danger mt-3">Vui lòng điền thông tin còn thiếu.
+                                            </div>
+                                            <div id="successMessage" style="display: none;"
+                                                class="alert alert-success mt-3">Thêm mới thành công.</div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Đóng</button>
+                                                <button type="submit" id="saveButton"
+                                                    class="btn btn-primary">Lưu</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <div class="nav-tabs mt-3">
+                        <ul class="nav nav-tabs page-header-tabs" id="pageHeaderTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" style="">Tất cả</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Gần đây
+                                    </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Chưa quay lại
+                                    </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Đã hủy đăng ký
+                                    </a>
+                            </li>
+                        </ul>
+                        <!-- End Nav -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Header -->
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center flex-grow-1">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <!--Search-->
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                                <!-- End Search -->
+                            </div>
+                            <!--Filter-->
+                            <div class="col-auto">
+                                <div class=" mr-2">
+                                    <a class="btn btn-outline-success">
+                                        <i class="fas fa-filter mr-1"></i> Filters
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End Filter-->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <!-- End Header -->
+
+                    <!-- Table -->
+                    <div class="table-responsive text-nowrap">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tên</th>
+                                    <th scope="col">Điện thoại</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Quốc gia</th>
+                                    <th scope="col">Đơn hàng</th>
+                                    <th scope="col">Giá trị</th>
+                                    <th scope="col">#</th>
+                                    <th scope="col">#</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle">
+                                    <td>1</td>
+                                    <td>
+                                        <a class="d-flex align-items-center" href="admin-product.html">
+                                            <img class="img-fluid me-3 rounded-circle" width="50" height="50"
+                                                src="images/product/electronic/product3.jpg" alt="">
+                                            <h5 class="mb-0 text-dark">Nguyễn Văn A</h5>
+                                        </a>
+                                    </td>
+                                    <td>0986100795</td>
+                                    <td>haipham.@st.ueh.edu.vn</td>
+                                    <td>Việt Nam</td>
+                                    <td>12</td>
+                                    <td>8.246.000</td>
+                                    <td><a class="btn btn-outline-secondary" href="#">Sửa</a></td>
+                                    <td><a class="btn btn-outline-danger" href="#">Xóa</a></td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td>2</td>
+                                    <td>
+                                        <a class="d-flex align-items-center" href="admin-product.html">
+                                            <img class="img-fluid me-3 rounded-circle" width="50" height="50"
+                                                src="images/product/electronic/product3.jpg" alt="">
+                                            <h5 class="mb-0 text-dark">Phạm Văn B</h5>
+                                        </a>
+                                    </td>
+                                    <td>0334199765</td>
+                                    <td>phamvanb@gmail.com</td>
+                                    <td>Việt Nam</td>
+                                    <td>3</td>
+                                    <td>2.251.000</td>
+                                    <td><a class="btn btn-outline-secondary" href="#">Sửa</a></td>
+                                    <td><a class="btn btn-outline-danger" href="#">Xóa</a></td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td>3</td>
+                                    <td>
+                                        <a class="d-flex align-items-center" href="admin-product.html">
+                                            <img class="img-fluid me-3 rounded-circle" width="50" height="50"
+                                                src="images/product/electronic/product3.jpg" alt="">
+                                            <h5 class="mb-0 text-dark">Amanda</h5>
+                                        </a>
+                                    </td>
+                                    <td>0986100795</td>
+                                    <td>amanda@gmail.com</td>
+                                    <td>United States </td>
+                                    <td>1</td>
+                                    <td>1.246.000</td>
+                                    <td><a class="btn btn-outline-secondary" href="#">Sửa</a></td>
+                                    <td><a class="btn btn-outline-danger" href="#">Xóa</a></td>
+                                </tr>
+                                
+                                
+                            </tbody>
+                        </table>
+                        <!--Pagination-->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Table -->
+
+                    <!-- Footer -->
+
+                    <!-- End Footer -->
+                </div>
+
+                <!-- Product Edit Modal -->
+                <div class="modal fade" id="productEditModal" tabindex="-1" aria-labelledby="productEditModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productEditModalLabel">Chỉnh sửa</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Product Edit Form -->
+                                <form id="productEditForm">
+                                    <div class="mb-3">
+                                        <label for="productID" class="form-label">Mã sản phẩm (*)</label>
+                                        <input type="text" disabled class="form-control" id="productID"
+                                            placeholder="2614741241">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productName" class="form-label">Tên sản phẩm (*)</label>
+                                        <input type="text" required value="Laptop Lenovo A270" class="form-control"
+                                            id="productName">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productDescription" class="form-label">Mô tả</label>
+                                        <textarea type="text" class="form-control" id="productDescription"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productType" class="form-label">Nhóm: </label>
+                                        <select id="productType" name="productType" class="form-select form-select-lg">
+                                            <option value="laptop">Laptop</option>
+                                            <option value="earphoe">Tai nghe</option>
+                                            <option value="accessories">Phụ kiện</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productPrice" class="form-label">Giá (*)</label>
+                                        <input type="number" required min="0" value="25670000" class="form-control"
+                                            id="productPrice">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productImg" class="form-label">Hình ảnh</label>
+                                        <input type="file" class="form-control" id="productImg">
+                                    </div>
+
+                                    <div id="editErrorMessage" style="display: none;" class="alert alert-danger mt-3">Vui
+                                        lòng điền thông tin còn thiếu.</div>
+                                    <div id="editSuccessMessage" style="display: none;" class="alert alert-success mt-3">
+                                        Chỉnh sửa thành công.</div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Đóng</button>
+                                        <button type="submit" id="editSaveButton" class="btn btn-primary">Lưu</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+    </main>
+    <!--====== End - App Content ======-->
+
+
+    <!--====== Main Footer ======-->
+    <footer>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="lower-footer__content">
+                            <div class="lower-footer__copyright">
+
+                                <span>Copyright © 2018</span>
+
+                                <a href="index.html">Reshop</a>
+
+                                <span>All Right Reserved</span>
+                            </div>
+                            <div class="lower-footer__payment">
+                                <ul>
+                                    <li><i class="fab fa-cc-stripe"></i></li>
+                                    <li><i class="fab fa-cc-paypal"></i></li>
+                                    <li><i class="fab fa-cc-mastercard"></i></li>
+                                    <li><i class="fab fa-cc-visa"></i></li>
+                                    <li><i class="fab fa-cc-discover"></i></li>
+                                    <li><i class="fab fa-cc-amex"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!--====== End - Main App ======-->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // add
+            const saveButton = document.getElementById("saveButton");
+            const errorMessage = document.getElementById("errorMessage");
+            const successMessage = document.getElementById("successMessage");
+            const productForm = document.getElementById("productForm");
+            // edit
+            const editSuccessMessage = document.getElementById("editSuccessMessage");
+            const editSaveButton = document.getElementById("editSaveButton");
+            const editErrorMessage = document.getElementById("editErrorMessage");
+            const productEditForm = document.getElementById("productEditForm");
+
+            saveButton.addEventListener("click", function () {
+                // Perform validation here
+                if (productForm.checkValidity()) {
+                    // Display the success message
+                    successMessage.style.display = "block";
+                    errorMessage.style.display = "none";
+
+                    // Reset the form
+                    productForm.reset();
+
+
+                } else {
+                    // If validation fails, the browser will show validation error messages.
+                    errorMessage.style.display = "block";
+                    successMessage.style.display = "none";
+                }
+            });
+
+            editSaveButton.addEventListener("click", function () {
+                // Perform validation here
+                if (editSaveButton.checkValidity()) {
+                    // Display the success message
+                    editSuccessMessage.style.display = "block";
+                    editErrorMessage.style.display = "none";
+
+                    // Reset the form
+                    productEditForm.hide();
+
+
+                } else {
+                    // If validation fails, the browser will show validation error messages.
+                    editErrorMessage.style.display = "block";
+                    editSuccessMessage.style.display = "none";
+                }
+            });
+
+        });
+    </script>
+
+
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="js/app.js"></script>
+
+    <!--====== Boostrap ======-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+
+                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a
+                                JavaScript-capable browser.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+
+</html>

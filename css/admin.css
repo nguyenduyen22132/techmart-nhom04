@@ -1,0 +1,115 @@
+body {
+    background-color: white;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+  
+  /* Sidebar */
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    top: 80px;
+    border-right: .0625rem solid #e7eaf3;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 250px;
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #132144;
+    padding-left: 20px;
+}
+
+.sidebar a:hover {
+    color: #377dff;
+}
+.sidebar .menu-text {
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.sidebar .icon {
+  position: relative;
+  display: block;
+  min-width: 40px;
+  height: 50px;
+  line-height: 50px;
+  
+}
+ /* Sidebar */
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+/* main */
+#sidebar-content {
+    display: block;
+    margin-left: 250px;
+    padding: 20px;
+    height: auto;
+    
+}
+.page-header {
+  border-bottom: 0.0625rem solid #e7eaf3;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.page-header-title {
+  color: #1e2022;
+  font-size: 1.41094rem;
+  font-weight: bold;
+}
+
+ /* Sticky footer */
+.lower-footer {
+    position:sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Màu nền của footer */
+    color: #fff; /* Màu chữ trong footer */
+    padding: 10px 0; /* Khoảng cách giữa nội dung và khung của footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+}
