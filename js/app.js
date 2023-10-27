@@ -475,16 +475,17 @@
               fade: true,
               asNavFor: $productDetailElementThumbnail
           });
-          // Init elevate zoom plugin to the first image
+          // // Kích hoạt plugin Elevate Zoom cho hình ảnh hiện tại trong slider.
           $('#pd-o-initiate .slick-current img').elevateZoom(ELEVATE_ZOOM_OBJ);
 
-          // Fires before slide change
+          // Gắn một sự kiện 'beforeChange' cho slider. Sự kiện này xảy ra trước khi slide thay đổi.
+        // Hàm callback này xử lý việc thay đổi hình ảnh khi người dùng trượt sang slide mới.
           $productDetailElement.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-              // Get the next slide image
+              // Lấy hình ảnh slide tiếp theo
               var $img = $(slick.$slides[nextSlide]).find('img');
-              // Remove old zoom elements
+             // Loại bỏ các phần tử liên quan đến hiệu ứng zoom của slide hiện tại.
               $('.zoomWindowContainer,.zoomContainer').remove();
-              // Reinit elevate zoom plugin to the next slide image
+                 // Kích hoạt lại plugin Elevate Zoom cho hình ảnh của slide tiếp theo.
               $($img).elevateZoom(ELEVATE_ZOOM_OBJ);
           });
 
