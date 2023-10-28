@@ -1369,7 +1369,7 @@
                                     <div id="pd-o-initiate">
                                         <div class="pd-o-img-wrap" data-src="images/product/electronic/product2.jpg">
 
-                                            <img class="u-img-fluid" src="images/product/electronic/product2.jpg" data-zoom-image="images/product/electronic/product2.jpg" alt=""></div>
+                                            <img id="productImg" class="u-img-fluid" src="images/product/electronic/product2.jpg" data-zoom-image="images/product/electronic/product2.jpg" alt=""></div>
                                         <div class="pd-o-img-wrap" data-src="images/product/electronic/product2.jpg">
 
                                             <img class="u-img-fluid" src="images/product/phone/iphone-15-pro-max-1.jpg" data-zoom-image="images/product/phone/iphone-15-pro-max-1.jpg" alt=""></div>
@@ -2704,6 +2704,22 @@
         ga('create', 'UA-XXXXX-Y', 'auto');
         ga('send', 'pageview')
     </script>
+
+<script>// file script.js 
+
+    const radios = document.querySelectorAll('input[name="color"]');
+    
+    const img = document.getElementById("productImg");
+    
+    radios.forEach(radio => {
+      radio.addEventListener('click', function() {
+        const color = this.nextElementSibling.style.backgroundColor;
+        
+        img.style.borderColor = color; 
+      });
+    });
+    </script>
+
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
     <!--====== Vendor Js ======-->
@@ -2714,6 +2730,9 @@
 
     <!--====== App ======-->
     <script src="js/app.js"></script>
+    <!--Đổi màu-->
+
+  
 
     <!--====== Noscript ======-->
     <noscript>

@@ -269,6 +269,7 @@
         <!--====== App Content ======-->
         <main id="sidebar-content" role="main">
             <div class="container-fluid">
+                <!--====== Head ======-->
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col-sm mb-sm-0">
@@ -375,7 +376,7 @@
                 </div>
 
                 <div class="card">
-                    <!-- Header -->
+                    <!-- Table Header -->
                     <div class="card-header">
                         <div class="row justify-content-between align-items-center flex-grow-1">
                             <div class="col-md-4 mb-3 mb-md-0">
@@ -402,9 +403,11 @@
                     <!-- End Header -->
 
                     <!-- Table -->
+                    <!--
                     <div class="table-responsive">
+                        
                         <table class="table table-striped">
-                            <thead>
+                            <thead> 
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Sản phẩm</th>
@@ -489,7 +492,9 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!--Pagination-->
+                    -->
+
+                    <!--Pagination
                         <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-end">
                                 <li class="page-item">
@@ -508,9 +513,85 @@
                             </ul>
                         </nav>
                     </div>
-                    <!-- End Table -->
+                -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="product-o product-o--hover-on product-o--radius">
+                                <div class="product-o__wrap">
+                                    <a class="d-flex align-items-center" href="admin-product.html">
+                                        <img class="img-fluid me-3" src="images/product/electronic/product3.jpg" alt="">
+                                    </a>
+                                </div>
 
-                    <!-- Footer -->
+                                <span class="product-o__category">
+
+                                    <a href="shop-side-version-2.html">Laptop</a></span>
+                                <span class="product-o__name">
+
+                                    <a href="product-detail.html">2614741241 - Laptop Lenovo A270</a>
+                                </span>
+
+                                <span class="product-o__price">đ 25.670.000</span>
+                                <span style="font-weight: 600; color: red; font-size: 14px;">Chưa xuất bản</span><br>
+                                <div class="mt-1">
+                                    <a class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#productEditModal" href="#">Sửa</a>
+                                    <a class="btn btn-outline-danger ms-2" href="#">Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-o product-o--hover-on product-o--radius">
+                                <div class="product-o__wrap">
+                                    <a class="d-flex align-items-center" href="admin-product.html">
+                                        <img class="img-fluid me-3" src="images/product/electronic/product3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="shop-side-version-2.html">Laptop</a></span>
+                                <span class="product-o__name">
+
+                                    <a href="product-detail.html">2614741241 - Laptop Lenovo A270</a>
+                                </span>
+
+                                <span class="product-o__price">đ 25.670.000</span>
+                                <span style="font-weight: 600; color: red; font-size: 14px;">Chưa xuất bản</span><br>
+                                <div class="mt-1">
+                                    <a class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#productEditModal" href="#">Sửa</a>
+                                    <a class="btn btn-outline-danger ms-2" href="#">Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-o product-o--hover-on product-o--radius">
+                                <div class="product-o__wrap">
+                                    <a class="d-flex align-items-center" href="admin-product.html">
+                                        <img class="img-fluid me-3" src="images/product/electronic/product3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="shop-side-version-2.html">Phụ kiện	</a></span>
+                                <span class="product-o__name">
+
+                                    <a href="product-detail.html">2459741241 - Cáp sạc điện thoại Lightning
+                                    </a>
+                                </span>
+
+                                <span class="product-o__price">đ 120.000</span>
+                                <span style="font-weight: 600; color: red; font-size: 14px;">Đã xuất bản</span><br>
+                                <div class="mt-1">
+                                    <a class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#productEditModal" href="#">Sửa</a>
+                                    <a class="btn btn-outline-danger ms-2" href="#">Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- End Footer -->
                 </div>
@@ -560,9 +641,11 @@
                                         <input type="file" class="form-control" id="productImg">
                                     </div>
 
-                                    <div id="editErrorMessage" style="display: none;" class="alert alert-danger mt-3">Vui
+                                    <div id="editErrorMessage" style="display: none;" class="alert alert-danger mt-3">
+                                        Vui
                                         lòng điền thông tin còn thiếu.</div>
-                                    <div id="editSuccessMessage" style="display: none;" class="alert alert-success mt-3">
+                                    <div id="editSuccessMessage" style="display: none;"
+                                        class="alert alert-success mt-3">
                                         Chỉnh sửa thành công.</div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -576,6 +659,7 @@
                     </div>
                 </div>
             </div>
+    </div>
 
     </div>
 
@@ -638,11 +722,8 @@
                     // Display the success message
                     successMessage.style.display = "block";
                     errorMessage.style.display = "none";
-
                     // Reset the form
                     productForm.reset();
-
-
                 } else {
                     // If validation fails, the browser will show validation error messages.
                     errorMessage.style.display = "block";
