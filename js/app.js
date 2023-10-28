@@ -145,22 +145,23 @@
     RESHOP.primarySlider = function() {
         if ($primarySlider.length) {
             $primarySlider.owlCarousel({
-                items: 1,
-                autoplayTimeout: 8000,
-                loop: true,
-                margin: -1,
+                items: 1,   // Chỉ định số lượng phần tử hiển thị trong mỗi lần trượt (1 phần tử).
+                autoplayTimeout: 8000,   // Đặt thời gian tự động trượt ảnh (8 giây).
+                loop: true,  // Kích hoạt chế độ vòng lặp (lặp lại các phần tử).
+                margin: -1,   // Đặt khoảng cách giữa các phần tử trong slider.
                 dots: false,
                 smartSpeed: 1500,
                 rewind: false, // Go backwards when the boundary has reached
                 nav: false,
                 responsive: {
                     992: {
-                        dots: true
+                        dots: true   // Khi màn hình có độ rộng lớn hơn hoặc bằng 992px, bật hiển thị dấu chấm (dots).
                     }
                 }
             });
         }
     };
+
 
     // Bind all sliders into the page
     RESHOP.productSlider = function() {
@@ -248,9 +249,9 @@
                 $(this).closest('.slider-fouc').removeAttr('class');
             }).owlCarousel({
                 autoplay: false,
-                loop: false,
-                dots: false,
-                rewind: true,
+                loop: false,   // Tắt chế độ vòng lặp (không lặp lại các phần tử).
+                dots: false, // Tắt hiển thị dấu chấm (dots).
+                rewind: true,  // Bật chế độ "rewind" (có thể quay lại phần đầu khi đến cuối).
                 nav: true,
                 navElement: 'div',
                 navClass: ['b-prev', 'b-next'],
@@ -276,18 +277,17 @@
 
     // Testimonial Slider
     RESHOP.testimonialSlider = function() {
-        // Check if Testimonial-Slider on the page
-        if ($testimonialSlider.length) {
+        if ($testimonialSlider.length) {   // Kiểm tra xem biến $testimonialSlider có phần tử nào không (độ dài lớn hơn 0) trước khi thực hiện
             $testimonialSlider.on('initialize.owl.carousel', function () {
                 $(this).closest('.slider-fouc').removeAttr('class');
             }).owlCarousel({
-                items:1,
-                autoplay: false,
+                items:1,  // Chỉ định số lượng phần tử hiển thị trong mỗi lần trượt (1 phần tử).
+                autoplay: false,  // Tắt chế độ tự động trượt ảnh.
                 loop: false,
-                dots: true,
-                rewind: false,
-                smartSpeed: 1500,
-                nav: false
+                dots: true,  // Hiển thị các dấu chấm (dots) để đại diện cho các trang của slider.
+                rewind: false, // Tắt chế độ "rewind" (không quay lại phần đầu khi đến cuối).
+                smartSpeed: 1500,    // thời gian chuyển đổi giữa các phần tử
+                nav: false  // Tắt nút điều hướng (nút trượt sang trái và phải).
             });
         }
     };

@@ -32,36 +32,33 @@
     <div id="app">
 
         <!--====== Main Header ======-->
-        <header class="header--style-1 header--box-shadow">
+        <header class="header--style-1">
 
-            <!--====== Nav 1 ======-->
+            <!--====== Logo, Khung Search, Account ======-->
             <nav class="primary-nav primary-nav-wrapper--border">
                 <div class="container">
 
                     <!--====== Primary Nav ======-->
                     <div class="primary-nav">
 
-                        <!--====== Main Logo ======-->
+                        <!--====== Logo ======-->
 
                         <a class="main-logo" href="index.html">
 
-                            <img src="images/logo/logo-1.png" alt="">
+                            <img src="images/logo/logo-1.png" alt="" width="150" height="40">
                         </a>
-                        <!--====== End - Main Logo ======-->
-                        <!--====== Search Form ======-->
-                        <form class="main-form">
-
+                        <!--====== End - Logo ======-->
+                        <!--====== Khung tìm kiếm ======-->
+                        <form class="main-form" action="empty-search.html">
                             <label for="main-search"></label>
-
-                            <input class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
-
+                            <input name="search" class="input-text input-text--border-radius input-text--style-1" type="text" id="main-search" placeholder="Tìm kiếm">
                             <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
                         </form>
-                        <!--====== End - Search Form ======-->
-                        <!--====== Dropdown Main plugin ======-->
+                        <!--====== End - Khung tìm kiếm ======-->
+                        <!--====== Thông tin liên hệ ======-->
                         <div class="menu-init" id="navigation">
 
-                            <button class="btn btn--icon toggle-button fas fa-cogs" type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cogs" type="button"></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -71,7 +68,7 @@
 
                                         <a><i class="far fa-user-circle"></i></a>
 
-                                        <!--====== Dropdown ======-->
+                                        <!--====== Dropdown tài khoản======-->
 
                                         <span class="js-menu-toggle"></span>
                                         <ul style="width:120px">
@@ -108,7 +105,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <!--====== End - Dropdown ======-->
+                                        <!--====== End - Dropdown Tài khoản ======-->
                                     </li>
                                     <li data-tooltip="tooltip" data-placement="left" title="Liên hệ">
 
@@ -123,17 +120,17 @@
                             </div>
                             <!--====== End - Menu ======-->
                         </div>
-                        <!--====== End - Dropdown Main plugin ======-->
+                        <!--====== End - Thông tin liên hệ ======-->
                     </div>
                     <!--====== End - Primary Nav ======-->
                 </div>
             </nav>
-            <!--====== End - Nav 1 ======-->
+            <!--====== End - Logo, Khung Search, Account ======-->
             <!--====== Nav 2 ======-->
             <nav class="secondary-nav-wrapper">
                 <div class="container">
 
-                    <!--====== Secondary Nav ======-->
+                    <!--====== Thanh 2 - categories, menu ======-->
                     <div class="secondary-nav">
 
                         <!--====== Dropdown Main plugin ======-->
@@ -216,7 +213,7 @@
                                                 <!--====== Categories Điện thoại ======-->
                                                 <div class="mega-menu-content js-active">
 
-                                                    <!--====== Mega Menu Row ======-->
+                                                    <!--====== Cột thông tin ======-->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <ul>
@@ -226,11 +223,11 @@
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">iPhone</a>
+                                                                    <a href="iphone.html">iPhone</a>
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Samsung</a>
+                                                                    <a href="cate-samsung.html">Samsung</a>
                                                                 </li>
                                                                 <li>
 
@@ -250,7 +247,7 @@
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Iphone 14 ProMax</a>
+                                                                    <a href="Iphone15-Pro-Max.html">Iphone 14 ProMax</a>
                                                                 </li>
                                                                 <li>
 
@@ -292,9 +289,9 @@
                                                         </div>
 
                                                     </div>
-                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <!--====== End - Cột thông tin ======-->
                                                     <br>
-                                                    <!--====== hình ảnh banner điện thoại ======-->
+                                                    <!--====== Start - hình ảnh điện thoại ======-->
                                                     <div class="row">
 
                                                         <div class="col-lg-9 mega-image">
@@ -307,13 +304,13 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <!--====== End - hình ảnh điện thoại ======-->
                                                 </div>
                                                 <!--====== End - Categories điện thoại ======-->
                                                 <!--====== Laptop ======-->
                                                 <div class="mega-menu-content">
 
-                                                    <!--====== Mega Menu Row ======-->
+                                                    <!--====== Mega Menu Laptop ======-->
                                                     <div class="row">
                                                         <div class="col-lg-6 mega-image">
                                                             <div class="mega-banner">
@@ -325,10 +322,10 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <!--====== End - Mega Menu Laptop  ======-->
                                                     <br>
 
-                                                    <!--====== Mega Menu Row ======-->
+                                                    <!--====== Mega Menu Laptop  ======-->
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <ul>
@@ -338,23 +335,23 @@
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Laptop DELL</a>
+                                                                    <a href="cate-dell.html">Laptop DELL</a>
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Laptop ASUS</a>
+                                                                    <a href="cate-asus.html">Laptop ASUS</a>
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Laptop HP</a>
+                                                                    <a href="cate-hp.html">Laptop HP</a>
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Laptop LG</a>
+                                                                    <a href="cate-laptoplg.html">Laptop LG</a>
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Macbook</a>
+                                                                    <a href="cate-macbook.html">Macbook</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -383,7 +380,7 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <!--====== End - Mega Menu Laptop ======-->
                                                     <br>
                                                 </div>
                                                 <!--====== End - Laptop ======-->
@@ -501,15 +498,15 @@
                                                                 </li>
                                                                 <li>
 
-                                                                    <a href="shop-side-version-2.html">Casino</a>
+                                                                    <a href="shop-side-version-2.html">SmartWatch</a>
+                                                                </li>
+                                                                <li>
+
+                                                                    <a href="shop-side-version-2.html">Casio</a>
                                                                 </li>
                                                                 <li>
 
                                                                     <a href="shop-side-version-2.html">Elio</a>
-                                                                </li>
-                                                                <li>
-
-                                                                    <a href="shop-side-version-2.html">Orient</a>
                                                                 </li>
 
                                                             </ul>
@@ -640,8 +637,8 @@
                             </div>
                             <!--====== End - Menu ======-->
                         </div>
-                        <!--====== End - Dropdown Main plugin ======-->
-                        <!--====== Dropdown Main plugin ======-->
+                        <!--====== End - Thông tin Categories ======-->
+                        <!--====== Thanh menu ======-->
                         <div class="menu-init" id="navigation2">
 
                             <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-cog" type="button"></button>
@@ -654,51 +651,15 @@
                                 <!--====== List ======-->
                                 <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
                                     <li>
-
-                                        <a href="shop-side-version-2.html">BỘ SƯU TẬP</a>
+                                        <a href="shop-list-full.html">BỘ SƯU TẬP</a>
                                     </li>
-                                    <li class="has-dropdown">
-
+                                    <li>
                                         <a href="shop-side-version-2.html">SẢN PHẨM NỔI BẬT</a>
-
-                                    </li>
-                                    <li class="has-dropdown">
-
-                                        <a>BLOG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
-
-                                        <!--====== Dropdown ======-->
-
-                                        <span class="js-menu-toggle"></span>
-                                        <ul style="width:200px">
-                                            <li>
-
-                                                <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                                            </li>
-                                            <li>
-
-                                                <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
-                                            </li>
-                                            <li>
-
-                                                <a href="blog-sidebar-none.html">Blog Sidebar None</a>
-                                            </li>
-                                            <li>
-
-                                                <a href="blog-masonry.html">Blog Masonry</a>
-                                            </li>
-                                            <li>
-
-                                                <a href="blog-detail.html">Blog Details</a>
-                                            </li>
-                                        </ul>
-                                        <!--====== End - Dropdown ======-->
                                     </li>
                                     <li>
-
-                                        <a href="shop-side-version-2.html">KHUYẾN MÃI</a>
+                                        <a href="faq.html">HỎI ĐÁP</a>
                                     </li>
                                     <li>
-
                                         <a href="contact.html">LIÊN HỆ</a>
                                     </li>
                                 </ul>
@@ -710,7 +671,7 @@
                         <!--====== Dropdown Main plugin ======-->
                         <div class="menu-init" id="navigation3">
 
-                            <button class="btn btn--icon toggle-button fas fa-shopping-bag toggle-button-shop" type="button"></button>
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop" type="button"></button>
 
                             <span class="total-item-round">2</span>
 
@@ -723,7 +684,7 @@
                                 <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
                                     <li>
 
-                                        <a href="index.html"><i class="fas fa-home"></i></a>
+                                        <a href="index.html"><i class="fas fa-home u-c-brand"></i></a>
                                     </li>
                                     <li>
 
@@ -750,26 +711,26 @@
                                                     <div class="mini-product">
                                                         <div class="mini-product__image-wrapper">
 
-                                                            <a class="mini-product__link" href="product-detail.html">
+                                                            <a class="mini-product__link" href="iphone-15-pro-max.html">
 
-                                                                <img class="u-img-fluid" src="images/product/electronic/product3.jpg" alt="">
+                                                                <img class="u-img-fluid" src="images/product/electronic/product2.jpg" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Electronics</a>
+                                                                <a href="shop-side-version-2.html">Điện thoại</a>
                                                             </span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Yellow Wireless Headphone</a>
+                                                                <a href="product-detail.html">iPhone 15 Pro Max 256GB</a>
                                                             </span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">$8</span>
+                                                            <span class="mini-product__price">33.990.000₫</span>
                                                         </div>
                                                     </div>
 
@@ -783,86 +744,24 @@
 
                                                             <a class="mini-product__link" href="product-detail.html">
 
-                                                                <img class="u-img-fluid" src="images/product/electronic/product18.jpg" alt="">
+                                                                <img class="u-img-fluid" src="images/product/electronic/product12.jpg" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="mini-product__info-wrapper">
 
                                                             <span class="mini-product__category">
 
-                                                                <a href="shop-side-version-2.html">Electronics</a>
+                                                                <a href="shop-side-version-2.html">SmartWatch</a>
                                                             </span>
 
                                                             <span class="mini-product__name">
 
-                                                                <a href="product-detail.html">Nikon DSLR Camera 4k</a>
+                                                                <a href="product-detail.html">Apple Watch SE 2022</a>
                                                             </span>
 
                                                             <span class="mini-product__quantity">1 x</span>
 
-                                                            <span class="mini-product__price">$8</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/women/product8.jpg" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Women Clothing</a>
-                                                            </span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Dress D Nice Elegant</a>
-                                                            </span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                                <!--====== Card for mini cart ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-
-                                                            <a class="mini-product__link" href="product-detail.html">
-
-                                                                <img class="u-img-fluid" src="images/product/men/product8.jpg" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-
-                                                                <a href="shop-side-version-2.html">Men Clothing</a>
-                                                            </span>
-
-                                                            <span class="mini-product__name">
-
-                                                                <a href="product-detail.html">New Fashion D Nice Elegant</a>
-                                                            </span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">$8</span>
+                                                            <span class="mini-product__price">6.290.000₫</span>
                                                         </div>
                                                     </div>
 
@@ -875,15 +774,15 @@
                                             <div class="mini-product-stat">
                                                 <div class="mini-total">
 
-                                                    <span class="subtotal-text">SUBTOTAL</span>
+                                                    <span class="subtotal-text">TỔNG CỘNG</span>
 
-                                                    <span class="subtotal-value">$16</span>
+                                                    <span class="subtotal-value">40.280.000₫</span>
                                                 </div>
                                                 <div class="mini-action">
 
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">PROCEED TO CHECKOUT</a>
+                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">THANH TOÁN</a>
 
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">VIEW CART</a>
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">XEM GIỎ HÀNG</a>
                                                 </div>
                                             </div>
                                             <!--====== End - Mini Product Statistics ======-->
